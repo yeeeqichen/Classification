@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f311eedc-946c-43a5-bf28-697fca857f4c" name="Default Changelist" comment="">
+    <list default="true" id="f311eedc-946c-43a5-bf28-697fca857f4c" name="Default Changelist" comment="'Aug 5th'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +98,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596593619622</updated>
-      <workItem from="1596593620906" duration="6011000" />
+      <workItem from="1596593620906" duration="7652000" />
     </task>
+    <task id="LOCAL-00001" summary="'Aug 5th'">
+      <created>1596599726512</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596599726512</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="'Aug 5th'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'Aug 5th'" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="608" y="265" key="#Notifications" timestamp="1596599933710">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="608" y="265" key="#Notifications/0.23.1440.797@0.23.1440.797" timestamp="1596599933710" />
     <state x="562" y="328" width="282" height="272" key="Github.ShareDialog" timestamp="1596593669673">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -128,6 +146,10 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1364" height="2" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1596598991279" />
+    <state x="328" y="157" key="Vcs.Push.Dialog.v2" timestamp="1596599765950">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="328" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1596599765950" />
     <state x="393" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1596599475467">
       <screen x="0" y="23" width="1440" height="797" />
     </state>

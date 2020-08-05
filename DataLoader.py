@@ -53,7 +53,9 @@ def get_bert_embed(words, seq_lens, bert_model, use_cuda):
     attention_mask = torch.from_numpy(attention_mask)
     if use_cuda:
         attention_mask = attention_mask.cuda()
-    return bert_model(words, attention_mask,  output_all_encoded_layers=False)
+    with torch.no_grad():
+        embed = bert_model(words, attention_mask, output_all_encoded_layers=False)
+    return embed
 
 
 class DataLoader:
@@ -62,9 +64,30 @@ class DataLoader:
         self.word_dict = load_word_dict()
         self.train_data, self.valid_data,  self.test_data = load_data(self.word_dict)
         self.batch_size = config.batch_size
+        self.max_len = config.max_len
 
-    # todo:按照len降序排列
     def run(self, mode):
+        def pad(max_len):
+            nonlocal start
+            nonlocal end
+            nonlocal data
+            words = data[1][start:end]
+            seq_lens = data[2][start:end]
+            # labels = data[3][start:end]
+            words_new = []
+            for inst in words:
+                if len(inst) <= max_len:
+                    words_new.append(inst + [0] * (max_len - len(inst)))
+                else:
+                    words_new.append(inst[:max_len])
+            seq_lens_new = [l if l <= max_len else max_len for l in seq_lens]
+            words_new_tensor = torch.from_numpy(numpy.array(words_new))
+            seq_lens_new_tensor = torch.from_numpy(numpy.array(seq_lens_new))
+            if config.use_cuda:
+                words_new_tensor = words_new_tensor.cuda()
+                seq_lens_new_tensor = seq_lens_new_tensor.cuda()
+            return words_new_tensor, seq_lens_new_tensor
+
         if mode == 'train':
             data = self.train_data
         elif mode == 'valid':
@@ -76,4 +99,7 @@ class DataLoader:
         for i in range(len(data[0]) // self.batch_size):
             start = i * self.batch_size
             end = (i + 1) * self.batch_size
-            yield data[0][start:end], data[1][start:end], data[2][start:end], data[3][start:end]
+            words_tensor, seq_len_tensor = pad(config.max_len)
+            seq_lens, idx = seq_len_tensor.sort(0, descending=True)
+            # 返回按照长度降序排列的words_tensor 和 seq_len_tensor
+            yield words_tensor[idx], seq_lens

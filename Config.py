@@ -11,6 +11,7 @@ class Config:
         self.hidden_size = 128
         self.input_size = 768
         self.num_class = 10
+        self.use_cuda = True
 
 
 config = Config()
