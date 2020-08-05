@@ -4,7 +4,7 @@ import torch
 class Lstm(torch.nn.Module):
     def __init__(self, hidden_size, input_size, num_layers, is_bidirectional, drop_out):
         super().__init__()
-        self.lstm = torch.nn.LSTM(input_size=input_size, hidden_size=hidden_size // 2,
+        self.lstm = torch.nn.LSTM(input_size=input_size, hidden_size=hidden_size,
                                   num_layers=num_layers, bidirectional=is_bidirectional,
                                   batch_first=True, dropout=drop_out)
         # self.classify = torch.nn.Linear(hidden_size, num_class)
@@ -23,8 +23,10 @@ class MyModel(torch.nn.Module):
         self.lstm = Lstm(hidden_size=hidden_size, input_size=input_size, num_layers=num_layers,
                          is_bidirectional=is_bidirectional, drop_out=drop_out)
         self.classify = torch.nn.Linear(hidden_size, num_class)
+        self.embedding = torch.nn.Embedding(num_embeddings=21128, embedding_dim=128)
 
-    def forward(self, encode, seq_len):
-        output, hidden = self.lstm(encode, seq_len)
-        logits = torch.nn.functional.softmax(self.classify(hidden))
+    def forward(self, input, seq_len):
+        embed = self.embedding(input)
+        output, (hidden, cell) = self.lstm(embed, seq_len)
+        logits = self.classify(hidden)
         return logits

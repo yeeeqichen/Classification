@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f311eedc-946c-43a5-bf28-697fca857f4c" name="Default Changelist" comment="'Aug 5th'">
+    <list default="true" id="f311eedc-946c-43a5-bf28-697fca857f4c" name="Default Changelist" comment="'完善了数据处理逻辑'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +33,39 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Python.DataLoader">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="Config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="DataLoader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Classification" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,9 +110,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.DataLoader" />
+        <item itemvalue="Python.Config" />
         <item itemvalue="Python.Model" />
       </list>
     </recent_temporary>
@@ -98,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596593619622</updated>
-      <workItem from="1596593620906" duration="7652000" />
+      <workItem from="1596593620906" duration="16416000" />
     </task>
     <task id="LOCAL-00001" summary="'Aug 5th'">
       <created>1596599726512</created>
@@ -107,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596599726512</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="'完善了数据处理逻辑'">
+      <created>1596601296058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596601296058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,13 +175,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="'Aug 5th'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'Aug 5th'" />
+    <MESSAGE value="'完善了数据处理逻辑'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'完善了数据处理逻辑'" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="87" key="#Deployment" timestamp="1596619123688">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="320" y="87" key="#Deployment/0.23.1440.797@0.23.1440.797" timestamp="1596619123688" />
     <state x="608" y="265" key="#Notifications" timestamp="1596599933710">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="608" y="265" key="#Notifications/0.23.1440.797@0.23.1440.797" timestamp="1596599933710" />
+    <state x="410" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596620877973">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="410" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.797@0.23.1440.797" timestamp="1596620877973" />
     <state x="562" y="328" width="282" height="272" key="Github.ShareDialog" timestamp="1596593669673">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -130,26 +199,30 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="478" y="50" key="Github.UntrackedFilesDialog/0.23.1440.797@0.23.1440.797" timestamp="1596593678817" />
-    <state width="1364" height="2" key="GridCell.Tab.0.bottom" timestamp="1596598991279">
+    <state width="1364" height="253" key="GridCell.Tab.0.bottom" timestamp="1596622534422">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1364" height="2" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1596598991279" />
-    <state width="1364" height="2" key="GridCell.Tab.0.center" timestamp="1596598991278">
+    <state width="1364" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1596622534422" />
+    <state width="1364" height="270" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1596616822838" />
+    <state width="1364" height="253" key="GridCell.Tab.0.center" timestamp="1596622534421">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1364" height="2" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1596598991278" />
-    <state width="1364" height="2" key="GridCell.Tab.0.left" timestamp="1596598991278">
+    <state width="1364" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1596622534421" />
+    <state width="1364" height="270" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1596616822835" />
+    <state width="1364" height="253" key="GridCell.Tab.0.left" timestamp="1596622534421">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1364" height="2" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1596598991278" />
-    <state width="1364" height="2" key="GridCell.Tab.0.right" timestamp="1596598991279">
+    <state width="1364" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1596622534421" />
+    <state width="1364" height="270" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1596616822835" />
+    <state width="1364" height="253" key="GridCell.Tab.0.right" timestamp="1596622534421">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1364" height="2" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1596598991279" />
-    <state x="328" y="157" key="Vcs.Push.Dialog.v2" timestamp="1596599765950">
+    <state width="1364" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1596622534421" />
+    <state width="1364" height="270" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1596616822836" />
+    <state x="328" y="157" key="Vcs.Push.Dialog.v2" timestamp="1596601298881">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="328" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1596599765950" />
+    <state x="328" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1596601298881" />
     <state x="393" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1596599475467">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -157,6 +230,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Classification$Model.coverage" NAME="Model Coverage Results" MODIFIED="1596594926355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Classification$DataLoader.coverage" NAME="DataLoader Coverage Results" MODIFIED="1596598991269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Classification$Config.coverage" NAME="Config Coverage Results" MODIFIED="1596616597861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Classification$DataLoader.coverage" NAME="DataLoader Coverage Results" MODIFIED="1596618535307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Classification$train.coverage" NAME="train Coverage Results" MODIFIED="1596622534412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
