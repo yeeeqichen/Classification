@@ -16,7 +16,7 @@ def load_data(word_dict):
             words = []
             for line in reader:
                 label, text = line[0].split('\t')[1:]
-                if label == 'label':
+                if label == 'label' or len(text) == 0:
                     continue
                 seq_lens.append(len(text))
                 texts.append(text)
@@ -57,6 +57,7 @@ def load_word_dict():
         for word in f:
             dic[word[:-1]] = idx
             idx += 1
+    config.dict_size = idx
     return dic
 
 
@@ -114,8 +115,11 @@ class DataLoader:
             end = (i + 1) * self.batch_size
             words_tensor, seq_len_tensor = pad(config.max_len)
             seq_lens, idx = seq_len_tensor.sort(0, descending=True)
+            labels_tensor = torch.from_numpy(numpy.array(data[3][start:end]))
+            if config.use_cuda:
+                labels_tensor = labels_tensor.cuda()
             # 返回按照长度降序排列的words_tensor 和 seq_len_tensor
-            yield words_tensor[idx], seq_lens
+            yield words_tensor[idx], seq_lens, labels_tensor
 
 
 if __name__ == '__main__':
